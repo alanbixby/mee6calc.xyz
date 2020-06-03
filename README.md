@@ -1,4 +1,4 @@
-# **[MEE6 Calculator](https://alanbixby.github.io/mee6calc/)**
+# **[MEE6 Calculator](https://alanbixby.github.io/MEE6-Calculator/index.html)**
 ### A fork of vladdeSV's archived 'mee6calc.xyz'; an improved interface and supports new !rank command formatting.
 ![screenshot](https://i.gyazo.com/3acda17ce00a46129db3e0f316b8ffb6.png)
 **Calculate the number of minutes messaging you need to reach a desired level.**
