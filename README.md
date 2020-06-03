@@ -1,11 +1,12 @@
 # **[MEE6 Calculator](https://alanbixby.github.io/mee6calc/)**
-### A fork of vladdeSV's archived 'mee6calc.xyz'.
-![screenshot](http://i.imgur.com/nHu5NZF.png)
-Calculate how many more messages you need to send (for every minute) in order to reach a specific level!
+### A fork of vladdeSV's archived 'mee6calc.xyz'; an improved interface and supports new !rank command formatting.
+![screenshot](https://i.gyazo.com/3acda17ce00a46129db3e0f316b8ffb6.png)
+**Calculate the number of minutes messaging you need to reach a desired level.**
 
 ### Usage
 1. Use the command `!rank` in a server where a MEE6 bot is present.
-1. Take note of your `Current Level` and the  `Current XP` displayed. ![screenshot](https://i.gyazo.com/d30658033449d2b9547c5739a3995ea0.png)
+1. Take note of your `Current Level` and the  `Current XP` displayed.</br>
+![screenshot](https://i.gyazo.com/d30658033449d2b9547c5739a3995ea0.png)
 1. Go to the **[MEE6 Calculator](https://alanbixby.github.io/mee6calc/)**.
   1. Enter the `Desired Level` you want to reach.
   1. Enter your `Current Level`.
