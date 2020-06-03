@@ -19,7 +19,8 @@
 MEE6's leveling system follows a pattern, which can be explained with a mathematical function, where `x` is the level desired, and `f(x)` is the XP required for specified level.
 
 ![function](https://i.imgur.com/QsV6E8N.png)
-The top and bottom functions are equivalent.
+
+> The top and bottom functions are equivalent.
 
 Using this, we can calculate your total XP by plugging your current level into this formula and adding your visible XP. Then, we subtract your total XP from the required XP, and what is left is how much more is needed until that level is reached. 
 
