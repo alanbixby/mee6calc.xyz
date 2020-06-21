@@ -49,7 +49,7 @@ function calculate() {
     let max_messages_needed_to_send = Math.ceil(xp_needed / min_xp_gain_per_message);
 
     //Display information to user
-    document.getElementById("total-xp").innerHTML = xp_of_current_level - (-1 * current_xp);
+    document.getElementById("total-xp").innerHTML = Math.round(+xp_of_current_level + +current_xp);
     document.getElementById("result-average").innerHTML = minutesToString(avg_messages_needed_to_send);
     document.getElementById("result-xp-needed").innerHTML = xp_needed;
     document.getElementById("result-minimum-messages-requirement").innerHTML = min_messages_needed_to_send;
