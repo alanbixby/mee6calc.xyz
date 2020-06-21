@@ -2,12 +2,12 @@
 <html>
 <head>
     <title>MEE6 Calculator</title>
+    <meta name="theme-color" content="#62d0f4">
     <meta property="og:title" content="MEE6 XP Calculator" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://alanbixby.github.io/MEE6-Calculator/ " />
     <meta property="og:image" content="https://alanbixby.github.io/MEE6-Calculator/MEE6.png" />
     <meta property="og:description" content="An XP calculator to determine the time it will take to reach a desired level in MEE6; use the command !rank to see your current level and XP." />
-    <script type="text/javascript" src="calc.js"></script>
     <link rel="icon" href="mee6_calc.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="utf-8">
@@ -25,8 +25,8 @@
             <input type="number" class="input-box generic-font" id="current-level" min=0 placeholder="Current Level">
             <input type="number" class="input-box generic-font" id="current-xp" min=0 placeholder="Current XP">
             <a class="button-calculate generic-font" onclick="calculate()" href="#result">Calculate</a>
-            <input type="range" class="slider" min="0" max="6" value="3" id="xp-modifier">
-            <span class="generic-font">XP Modifier: <span id="xp-rate">x1.0</span></span>
+            <input type="range" class="slider" min="0" max="7" value="3" id="xp-modifier">
+            <span class="generic-font">XP Modifier: <span id="xp-rate">x1.0 | [15XP - 25XP]</span></span>
         </div>
 
         <div class="results" id="result">
@@ -50,6 +50,7 @@
     </div>
 
 </body>
+<script type="text/javascript" src="calc.js"></script>
 </html>
 
 

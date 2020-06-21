@@ -1,12 +1,42 @@
-function calculate() {
-    //Constants
-    let min_xp_gain_per_message = 15;
-    let max_xp_gain_per_message = 25;
+let desiredInput = document.getElementById("desired-level"),
+    levelInput = document.getElementById("current-level"),
+    xpInput = document.getElementById("current-xp"),
+    xpSlider = document.getElementById("xp-modifier"),
+    xpRate = document.getElementById("xp-rate"),
+    rateList = [0.25, 0.5, .75, 1.0, 1.5, 2.0, 2.5, 3.0],
+    min_xp_gain_per_message = 15,
+    max_xp_gain_per_message = 25;
 
+desiredInput.value = "";
+levelInput = "";
+xpInput = "";
+xpSlider.value = 3;
+
+xpSlider.oninput = function() {
+    xpRate.innerHTML = "x" + rateList[this.value].toPrecision(2).toString();
+    min_xp_gain_per_message = Math.floor(15 * rateList[xpSlider.value]);
+    max_xp_gain_per_message = Math.ceil(25 * rateList[xpSlider.value]);
+    calculate();
+};
+
+desiredInput.oninput = function() {
+    calculate();
+}
+
+levelInput.oninput = function () {
+    calculate();
+}
+
+xpInput.oninput = function () {
+    calculate();
+}
+
+function calculate() {
     //Input from user
     let desired_level = document.getElementById("desired-level").value;
     let current_level = document.getElementById("current-level").value;
     let current_xp = document.getElementById("current-xp").value;
+    
 
     //Math functions to determine XP requirements
     let xp_to_desired_level = 5 / 6 * desired_level * (2 * desired_level * desired_level + 27 * desired_level + 91);
@@ -24,6 +54,7 @@ function calculate() {
     document.getElementById("result-xp-needed").innerHTML = xp_needed;
     document.getElementById("result-minimum-messages-requirement").innerHTML = min_messages_needed_to_send;
     document.getElementById("result-maximum-messages-requirement").innerHTML = max_messages_needed_to_send;
+    xpRate.innerHTML = `x${rateList[xpSlider.value].toPrecision(2).toString()} | [${min_xp_gain_per_message}XP - ${max_xp_gain_per_message}XP]`;
 }
 
 function minutesToString(minutes) {
