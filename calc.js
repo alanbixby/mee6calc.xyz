@@ -8,8 +8,8 @@ let desiredInput = document.getElementById("desired-level"),
     max_xp_gain_per_message = 25;
 
 desiredInput.value = "";
-levelInput = "";
-xpInput = "";
+levelInput.value = "";
+xpInput.value = "";
 xpSlider.value = 3;
 
 xpSlider.oninput = function() {
