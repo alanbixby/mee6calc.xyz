@@ -61,11 +61,22 @@ body
     text-align: center;
     margin-bottom: 10px;
 }
+
 .input-box[type="number"]
 {
     font-weight: lighter;
 }
 
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 600px;
+    height: 5px;
+    background: #ffffff;
+    outline: none;
+    margin-top: 15px;
+    margin-bottom: 5px;
+  }
 .button-calculate
 {
     padding: 15px 0;
